@@ -93,11 +93,11 @@ class Student
     end
   end
   
-  def self.all_students_in_grade_X(choice)
+  def self.all_students_in_grade_X(?)
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = choice
+      WHERE grade = ?
     SQL
  
     make_a_new_db(sql)
