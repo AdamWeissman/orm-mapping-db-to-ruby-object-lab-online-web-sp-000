@@ -97,7 +97,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = x
+      WHERE x = grade
     SQL
  
     make_a_new_db(sql)
