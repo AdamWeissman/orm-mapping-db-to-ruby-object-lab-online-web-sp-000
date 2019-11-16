@@ -87,7 +87,7 @@ class Student
     make_a_new_db(sql)
   end
   
-  def self.make_a_new_db(with_this)
+  def self.make_a_new_db(with_this) #helper method for standard DB
     DB[:conn].execute(with_this).map do |row|
       self.new_from_db(row)
     end
